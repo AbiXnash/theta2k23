@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Theta 2k23</title>
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+
+		<header class="header">
+			<a href="#" class="logo"> 
+				<img style="font-size: 30px; font-weight: bold; color: #0e8bb5; margin-bottom:-5px;" src="images/loogoo.png" alt="">
+				Theta <span style="color: #0e8bb5;">2k23</span>
+			</a>
+			<nav class="navbar">
+			   <div id="close-navbar" class="fas fa-times"></div>
+			   <a href="index.html">Home</a>
+			   <a href="about.html">About</a>
+			   <a href="clusters.html">Clusters</a>
+			   <a href="contact.html">Contact</a>
+			</nav>
+			<div class="icons">
+			   <div id="account-btn" class="fas fa-user"></div>
+			   <div id="menu-btn" class="fas fa-bars"></div>
+			</div>
+		 </header>
+		 <div class="account-form">
+			<div id="close-form" class="fas fa-times"></div>
+			<div class="buttons">
+			   <span class="btn active login-btn">Login</span>
+			   <span class="btn register-btn">Register</span>
+			</div>
+			<form class="login-form active" action="">
+			   <h3>Login Now</h3>
+			   <input type="email" placeholder="Enter your email" class="box">
+			   <input type="password" placeholder="Enter your password" class="box">
+			   <div class="flex">
+				  <input type="checkbox" name="" id="remember-me">
+				  <label for="remember-me">Remember me</label>
+				  <a href="#">Forgot password?</a>
+			   </div>
+			   <a href="error/login.html" class="btn">Login now</a>
+		
+			</form>
+			<form class="register-form" action="">
+			   <h3>Register Now</h3>
+			   <input type="email" placeholder="Enter your email" class="box">
+			   <input type="password" placeholder="Enter your password" class="box">
+			   <input type="password" placeholder="Confirm your password" class="box">
+			   <a href="error/register.html" class="btn">Register now</a>
+			</form>
+		 </div>
+		<section class="home">
+			<div class="swiper home-slider">
+				<div class="swiper-wrapper">
+					<section class="video-section">
+						<video autoplay muted loop class="bg-video">
+							<source src="video/theta.mp4" type="video/mp4">
+						</video>
+						<div class="overlay">
+							<div class="conten">
+								<h3>Theta 2k23</h3>
+								<h2>Fun Beyond Limits<small></small></h2>
+								<a onclick="scrollToSection('#subject')" class="b">Get Started</a>
+							</div>
+						</div>
+					</section>				
+					<style>
+						.b {
+							display: inline-block;
+							margin-top: 1rem;
+							padding: 1rem 3rem;
+							font-size: 1.8rem;
+							border-radius: 50%;
+							border: 0.1rem solid #0e8bb5;
+							background: rgba(255, 255, 255, 0.69);
+							color: #000000;
+							cursor: pointer;
+							text-transform: capitalize;
+							border-radius: 4rem;
+							text-align: center;
+							text-decoration: none;
+							cursor: pointer;
+							position: relative;
+							overflow: hidden;
+							transition: all 0.4s ease-out;
+						}
+						.video-section {
+							position: relative;
+							height: 100vh;
+							width: 100vw;
+							background: rgba(86, 86, 86, 0.301);
+						}
+						.bg-video {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+						.overlay {
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background-color: rgba(86, 86, 86, 0.301);
+							z-index: 0;
+						}
+						.conten {
+							padding: 3rem 2.8rem;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							text-align: center;
+							background-color: rgba(121, 120, 120, 0.074);
+							z-index: 1;
+							border-radius: 10rem;
+							overflow: hidden;
+						}
+						.conten h3 {
+							font-size: 5rem;
+							color: #ffffff;
+							margin-bottom: 1rem;
+						}
+
+						.conten h2, .conten h3 {
+							white-space: nowrap;
+							text-overflow: ellipsis;
+						}
+						.conten h2 {
+							font-size: 4.7rem;
+							color: #eaeaeaf4;
+							margin-bottom: 1rem;
+						}
+						.conten h3, .conten h2 {
+							font-family: Verdana, Geneva, Tahoma, sans-serif;
+							margin-bottom: 1rem;
+							text-shadow:0 0 10px rgba(202, 218, 247, 0.8),
+										0 0 20px rgba(159, 187, 253, 0.5),
+										0 0 30px rgba(133, 129, 253, 0.3),
+										0 0 40px rgba(73, 97, 254, 0.2),
+										0 0 50px rgba(33, 17, 254, 0.1),
+										0 0 60px rgb(243, 235, 235),
+										0 0 70px rgba(232, 224, 224, 0.7);
+							transition: text-shadow 0.5s ease-out;
+						}
+						.conten h3:hover, .conten h2:hover {
+							text-shadow:0 0 10px rgba(255,255,255,0.8),
+										0 0 20px rgba(255,255,255,0.5),
+										0 0 30px rgba(255,255,255,0.3),
+										0 0 40px rgba(255,255,255,0.4),
+										0 0 50px rgba(255,255,255,0.5);
+							transition: text-shadow 0.5s ease-out;			
+
+						}
+						@media screen and (max-width: 768px) {
+							.conten h3 {
+								font-size: 5rem;
+								margin-bottom: 0.5rem;
+								line-height: 1.2;
+							}
+							.conten h2 {
+								font-size: 3rem;
+								margin-bottom: 0.5rem;
+								line-height: 1.2;
+							}
+						}
+						@media only screen and (max-width: 424px) {
+							.content h3 {
+								font-size: 4rem;
+								line-height: 1.2;
+							}
+							.conten h2 {
+								font-size: 2rem;
+								line-height: 1.2;
+							}
+						}
+					</style>
+				</div>
+			</div>
+		</section>
+		<section class="home-courses">
+			<h1 class="heading">Promotions</h1>
+			<div class="swiper home-courses-slider">
+			   <div class="swiper-wrapper">
+				<div class="swiper-slide slide">
+					<div class="image">
+					   <img src="images/ShortFilm.png" alt="">
+					   <h3>ShortFilm Contest</h3>
+					</div>
+					<div class="content">
+					   <h3>Emulsion</h3>
+					   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+					   <a href="#" class="btn">Register Now</a>
+					</div>
+				 </div>
+
+				 <div class="swiper-slide slide">
+					<div class="image">
+					   <img src="images/AD.png" alt="">
+					   <h3>AD Film Contest</h3>
+					</div>
+					<div class="content">
+					   <h3>Emulsion</h3>
+					   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+					   <a href="#" class="btn">Register Now</a>
+					</div>
+				 </div>
+				 <div class="swiper-slide slide">
+					<div class="image">
+					   <img src="images/MashUp.png" alt="">
+					   <h3>MashUp Contest</h3>
+					</div>
+					<div class="content">
+					   <h3>Emulsion</h3>
+					   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+					   <a href="#" class="btn">Register Now</a>
+					</div>
+				 </div>
+				 <div class="swiper-slide slide">
+					<div class="image">
+					   <img src="images/course-1-2.png" alt="">
+					   <h3>Poster...!!!</h3>
+					</div>
+					<div class="content">
+					   <h3>poster 3</h3>
+					   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+					   <a href="#" class="btn">Register Now</a>
+					</div>
+				 </div>
+				 <div class="swiper-slide slide">
+					<div class="image">
+					   <img src="images/course-1-2.png" alt="">
+					   <h3>Poster...!!!</h3>
+					</div>
+					<div class="content">
+					   <h3>poster 4</h3>
+					   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ratione?</p>
+					   <a href="#" class="btn">Register Now</a>
+					</div>
+				</div>
+			   </div>
+		 
+			</div>
+		 
+		 </section>
+		<section class="footer">
+			<div class="box-container">
+				<div class="box">
+					<h3> <img style="font-size: 30px; font-weight: bold; color: #0e8bb5; margin-bottom:-5px;" src="images/loogoo.png" alt="">
+						Theta <span style="color: #0e8bb5;">2k23</span></h3>
+					<p>Techno-management fest of SASTRA Deemed to be University</p>
+					<div class="share">
+						<a href="#" class="fab fa-facebook-f"></a>
+						<a href="#" class="fab fa-twitter"></a>
+						<a href="#" class="fab fa-instagram"></a>
+						<a href="#" class="fab fa-linkedin"></a>
+					</div>
+				</div>
+				<div class="box">
+					<h3>Quick links</h3>
+					<a href="index.html" class="link">Home</a>
+					<a href="about.html" class="link">About</a>
+					<a href="clusters.html" class="link">Clusters</a>
+					<a href="contact.html" class="link">Contact</a>
+				</div>
+				<div class="box">
+					<h3>Useful links</h3>
+					<a href="https://www.sastra.edu/" target="_blank"class="link">Sastra University</a>
+					<a href="#" class="link">Rules & Regulation</a>
+				</div>
+				<div class="box">
+					<h3>Newsletter</h3>
+					<p>Subscribe for latest upadates</p>
+					<form action="">
+						<input type="email" name="" placeholder="Enter your email" id="" class="email">
+						<input type="submit" value="Subscribe" class="btn" onclick="showMessage()">
+					</form>
+				</div>
+			</div>
+			<div class="credit">
+				 Created by <span>Emulsion</span> | all rights reserved! 
+			</div>
+		 </section>
+		
+		 <script>
+			function showMessage() {
+			  alert("Thanks for subscribing :)");
+			}
+		</script>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+		<script>
+			function scrollToSection(sectionId) {
+				const section = document.querySelector(sectionId);
+				if (section) {
+					section.scrollIntoView({ behavior: "smooth" });
+				}
+			}
+			
+		</script>
+
+	</body>
+	
+</html>
+ 
